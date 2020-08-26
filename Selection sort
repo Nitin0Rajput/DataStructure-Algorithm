@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+using namespace std;    
+  void selection_sort(int arr[],int n){
+for(int i=0;i<n;i++){
+    for(int j=i+1;j<n;j++){
+        if(arr[i]>arr[j]){
+            swap(arr[i],arr[j]);
+        }
+    }
+}
+  }
+  void print(int arr[],int n){
+      for(int i=0;i<n;i++){
+      cout<<arr[i]<<" ";
+  }
+  }
+int main(){
+int arr[5]={5,4,3,2,1};
+ int n=sizeof(arr)/sizeof(arr[0]);
+  
+  selection_sort(arr,n);
+  print(arr,n);
+ return 0;
+}
